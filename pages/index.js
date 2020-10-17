@@ -1,11 +1,17 @@
+import { useTheme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home(props) {
+  const theme = useTheme();
+
   return (
-    <Button variant="contained" color="primary">
-      pp had
-    </Button>
+    <div className='flex' style={{ backgroundColor: theme.palette.secondary.main }}>
+      <Button variant="contained" color="primary">
+        pp had
+      </Button>
+
+      <div style={{height: '100px', width: '200px' }} />
+    </div>
+
   )
 }
