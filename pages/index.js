@@ -6,8 +6,8 @@ export default function Home(props) {
 
   return (
     <div className='flex' style={{ backgroundColor: theme.palette.secondary.main }}>
-      <Button variant="contained" color="primary">
-        pp had
+      <Button variant="contained" color="primary" onClick={props.toggleTheme}>
+        Toggle Theme
       </Button>
 
       <div style={{height: '100px', width: '200px' }} />
