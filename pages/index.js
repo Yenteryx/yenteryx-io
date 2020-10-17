@@ -1,10 +1,11 @@
+import Button from '@material-ui/core/Button';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
-      i am the big pp man
-    </div>
+    <Button variant="contained" color="primary">
+      pp had
+    </Button>
   )
 }
